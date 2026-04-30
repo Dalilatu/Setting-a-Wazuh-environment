@@ -1,0 +1,1 @@
+# Setting-a-Wazuh-environment
