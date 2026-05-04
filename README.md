@@ -84,7 +84,7 @@ user: admin
 password: admin
 <br/>
 <br/>
-<b>NB:</b> It is to be noted that the .ova file is a Wazuh server and hence, only uses the CLI interface. Inorder to access the <strong>Web Interface</strong>, you need to use a windows system that is connected to the Wazuh server. Incase you choose to use your host machine to access the web interface like i did, yoo need to set the network of the server to <b>Bridged Adapter</b> so that it can communicate with your host.<br/>
+<b>NB:</b> It is to be noted that the .ova file is a Wazuh server and hence, only uses the CLI interface. Inorder to access the <strong>Web Interface</strong>, you need to use a windows system that is connected to the Wazuh server. Incase you choose to use your host machine to access the web interface like i did, you need to set the network of the server to <b>Bridged Adapter</b> so that it can communicate with your host.<br/>
 <br/>
 <br/>
 
