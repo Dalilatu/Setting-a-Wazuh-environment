@@ -43,6 +43,10 @@ Wazuh has a pre-built virtual machine image in Open Virtual Appliance (OVA) form
 Import the OVA file in Virtual Box. <br/>
 
   <!-- IMAGE HERE -->
+  <p align="center">
+<img alt="image" src="https://github.com/user-attachments/assets/7745c88c-4e28-4016-9229-4fba88a51ff7" height="80%" width="80%"/>
+<br />
+<br />
   
 <b>Step 2:</b><br/>
 Since we're using VirtualBox, we need to set the VMSVGA graphic controller. Setting another graphic controller freezes the VM window.<br/>
@@ -52,7 +56,7 @@ Since we're using VirtualBox, we need to set the VMSVGA graphic controller. Se
 
   <!-- IMAGE HERE -->
   <p align="center">
-<img alt="image" src="https://github.com/user-attachments/assets/7745c88c-4e28-4016-9229-4fba88a51ff7" height="80%" width="80%"/>
+ <img alt="image" src="https://github.com/user-attachments/assets/91acc11d-7cbd-4c68-ad53-ace6962c70db" height="80%" width="80%"/>
 <br />
 <br />
 
