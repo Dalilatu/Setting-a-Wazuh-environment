@@ -73,6 +73,8 @@ Access the Wazuh web interface using the following credentials.<br/>
 <br/>
 <br/>
 user: admin
+<br/>
 password: admin
 <br/>
 <br/>
+
