@@ -29,5 +29,6 @@ To extract information we need for Wazuh, we install Mimikatz using Powershell o
 <br/>
  `Invoke-WebRequest -Uri https://github.com/ParrotSec/mimikatz/archive/refs/heads/master.zip -OutFile C:/Users/m122/Downloads/mimikatz.zip`
 <br/>
+<br/>
 <b>NB</B>: Be sure to change the user from m122 in the -OutFile path.<br/>
 
