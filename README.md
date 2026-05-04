@@ -93,4 +93,9 @@ password: admin
 <br />
 <br />
 
+<p align="center">
+<img alt="image" src="https://github.com/user-attachments/assets/112d756a-1746-4d28-afae-dfe72623f439" height="80%" width="80%"/>
+<br />
+<br />
+
 
