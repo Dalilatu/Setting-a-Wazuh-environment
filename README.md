@@ -110,16 +110,16 @@ default gateway: `sudo route add default gw 192.168.1.1 eth0`<br/>
 Creating agents in Wazuh is essential because they collect and send security data from endpoints to the central server, enabling real-time monitoring, threat detection, file integrity checks, and incident response; without agents, Wazuh has little visibility into systems and cannot effectively protect or monitor them.<br/>
 Below are the steps to follow:<br/>
 <br/>
-<b>Step 1:<b/> Click on create agents and choose windows system of the agent. <br/>
+<b>Step 1:</b> Click on create agents and choose windows system of the agent. <br/>
 
-<b>Step 2:<b/> Copy the powershell command and run it on the windows system you wish to install the agent.<br/>
+<b>Step 2:</b> Copy the powershell command and run it on the windows system you wish to install the agent.<br/>
 
 <p align="center">
 <img alt="image" src="https://github.com/user-attachments/assets/88bd9db7-a57d-4e63-b67b-902ac84af0e0" height="80%" width="80%"/>
 <br />
 <br />
 
-<b>Step 3:<b/> Start the agent with the following command.<br/>
+<b>Step 3:</b> Start the agent with the following command.<br/>
 <br/>
 
  `NET START WazuhSvc`<br/>
@@ -130,7 +130,7 @@ Below are the steps to follow:<br/>
 <br />
 <br />
 
- <b>NB:<b/>On the Wazuh dashboard, you should now see the agent.<br/>
+ <b>NB:</b>On the Wazuh dashboard, you should now see the agent.<br/>
 
  <p align="center">
 <img alt="image" src="https://github.com/user-attachments/assets/d73c21f1-efa6-4b99-8152-1d7885be4cb9" height="80%" width="80%"/>
