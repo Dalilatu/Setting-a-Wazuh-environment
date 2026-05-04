@@ -98,4 +98,39 @@ password: admin
 <br />
 <br />
 
+<b>NB:</b> You need to give you server a Static Ip Address and it default gateway to ensure it IP address doesn't change in case it listens to DHCP.<br/>
+
+This can be done using the following commands.<br/>
+Static ip addres: `sudo ifconfig eth0 192.168.1.x netmask 255.255.255.0`<br/>
+default gateway: `sudo route add default gw 192.168.1.1 eth0`<br/>
+<br/>
+
+## Creating Agents to deploy to other devices
+
+Creating agents in Wazuh is essential because they collect and send security data from endpoints to the central server, enabling real-time monitoring, threat detection, file integrity checks, and incident response; without agents, Wazuh has little visibility into systems and cannot effectively protect or monitor them.<br/>
+Below are the steps to follow:<br/>
+<br/>
+<b>Step 1:<b/> Click on create agents and choose windows system of the agent. <br/>
+
+<b>Step 2:<b/> Copy the powershell command and run it on the windows system you wish to install the agent.<br/>
+
+<!-- IMAGE HERE -->
+
+<b>Step 3:<b/> Start the agent with the following command.<br/>
+<br/>
+
+ `NET START WazuhSvc`<br/>
+ <br/>
+
+ <!-- IMAGE HERE -->
+
+ <br/>
+
+ <b>NB:<b/>On the Wazuh dashboard, you should now see the agent.<br/>
+
+ <!-- IMAGE HERE -->
+
+ 
+
+
 
