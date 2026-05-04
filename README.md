@@ -114,7 +114,10 @@ Below are the steps to follow:<br/>
 
 <b>Step 2:<b/> Copy the powershell command and run it on the windows system you wish to install the agent.<br/>
 
-<!-- IMAGE HERE -->
+<p align="center">
+<img alt="image" src="https://github.com/user-attachments/assets/88bd9db7-a57d-4e63-b67b-902ac84af0e0" height="80%" width="80%"/>
+<br />
+<br />
 
 <b>Step 3:<b/> Start the agent with the following command.<br/>
 <br/>
@@ -122,13 +125,18 @@ Below are the steps to follow:<br/>
  `NET START WazuhSvc`<br/>
  <br/>
 
- <!-- IMAGE HERE -->
-
- <br/>
+ <p align="center">
+<img alt="image" src="https://github.com/user-attachments/assets/60dea72a-7880-4dc4-afce-3639cef798c1" height="80%" width="80%"/>
+<br />
+<br />
 
  <b>NB:<b/>On the Wazuh dashboard, you should now see the agent.<br/>
 
- <!-- IMAGE HERE -->
+ <p align="center">
+<img alt="image" src="https://github.com/user-attachments/assets/d73c21f1-efa6-4b99-8152-1d7885be4cb9" height="80%" width="80%"/>
+<br />
+<br />
+
 
  
 
