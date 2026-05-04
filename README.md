@@ -43,6 +43,7 @@ Wazuh has a pre-built virtual machine image in Open Virtual Appliance (OVA) form
 Import the OVA file in Virtual Box. <br/>
 
   <!-- IMAGE HERE -->
+  
 <b>Step 2:</b><br/>
 Since we're using VirtualBox, we need to set the VMSVGA graphic controller. Setting another graphic controller freezes the VM window.<br/>
 <br/>
@@ -52,3 +53,26 @@ Since we're using VirtualBox, we need to set the VMSVGA graphic controller. Se
 
   <!-- IMAGE HERE -->
 
+  <b>Step 3:</b><br/>
+Start the VM then access it using the VM and password.It is easiest to access via SSH using Putty so that copy/paste functions properly.
+<br/>
+
+<!-- user: wazuh-user
+     password: wazuh
+     
+     SSH root user login has been deactivated; nevertheless, the wazuh-user retains sudo privileges. Root privilege escalation can be achieved by executing the following command:
+     
+     sudo -i  -->
+
+<br/>
+
+<b>Step 4:</b><br/>
+Access the Wazuh web interface using the following credentials.<br/>
+<br/>
+`https://<wazuh_server_ip>`
+<br/>
+<br/>
+user: admin
+password: admin
+<br/>
+<br/>
