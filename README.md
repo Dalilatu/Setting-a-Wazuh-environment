@@ -25,10 +25,10 @@ This repository describes in detail how i configured the SIEM tool Wazuh i will 
 
 ## Pre-Installation
 
-To extract information we need for Wazuh, we install Mimikatz using Powershell on windows system with the following command.<br/>
+We will install a malware Mimikatz using Powershell on windows system with the following command.This will enable us to harvest victim's credentials and device informations.<br/>
 <br/>
  `Invoke-WebRequest -Uri https://github.com/ParrotSec/mimikatz/archive/refs/heads/master.zip -OutFile C:/Users/m122/Downloads/mimikatz.zip`
 <br/>
 <br/>
-<b>NB</B>: Be sure to change the user from m122 in the -OutFile path.<br/>
+<b>NB</B>: Be sure to change the user from m122 to the system's User Profile name in the -OutFile path.<br/>
 
