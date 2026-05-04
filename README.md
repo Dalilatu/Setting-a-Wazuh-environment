@@ -23,4 +23,11 @@ This repository describes in detail how i configured the SIEM tool Wazuh i will 
 | Wazuh| Open-source security platform used for threat detection, incident response, and compliance management, combining SIEM (Security Information and Event Management) and XDR (Extended Detection and Response) capabilities | [Download](https://packages.wazuh.com/4.x/vm/wazuh-4.7.4.ova) |
 | Windows 11 Enterprise | Will be used as our client machine | [Download](https://www.microsoft.com/en-us/evalcenter/download-windows-11-enterprise) |
 
-## Installing and Configuring Sysmon
+## Pre-Installation
+
+To extract information we need for Wazuh, we install Mimikatz using Powershell on windows system with the following command.<br/>
+<br/>
+ `Invoke-WebRequest -Uri https://github.com/ParrotSec/mimikatz/archive/refs/heads/master.zip -OutFile C:/Users/m122/Downloads/mimikatz.zip`
+<br/>
+<b>NB</B>: Be sure to change the user from m122 in the -OutFile path.<br/>
+
