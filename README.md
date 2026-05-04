@@ -39,7 +39,8 @@ Wazuh has a pre-built virtual machine image in Open Virtual Appliance (OVA) form
 <br/>
 <h2>Steps To Follow:</h2>
 <br/>
-<b>Step 1:</b>Import the OVA file in Virtual Box. <br/>
+<b>Step 1:</b><br/>
+Import the OVA file in Virtual Box. <br/>
 
   <!-- IMAGE HERE -->
 <b>Step 2:</b><br/>
