@@ -44,7 +44,7 @@ Import the OVA file in Virtual Box. <br/>
 
   <!-- IMAGE HERE -->
   <p align="center">
-<img alt="image" src="https://github.com/user-attachments/assets/7745c88c-4e28-4016-9229-4fba88a51ff7" height="80%" width="80%"/>
+<img alt="image" src="https://github.com/user-attachments/assets/738177ca-6aa5-4809-b0bc-f1f3ad94d37e" height="80%" width="80%"/>
 <br />
 <br />
   
