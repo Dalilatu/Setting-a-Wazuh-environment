@@ -138,6 +138,10 @@ Below are the steps to follow:<br/>
 <br />
 
 
+## Configure Wazuh to Monitor Sysmon Logs
+
+Configuring Wazuh to monitor Sysmon logs is necessary because Sysmon provides deep, detailed visibility into system activity—such as process creation, network connections, and file changes that standard Windows logs often miss; by ingesting these logs, Wazuh can detect advanced threats, suspicious behavior, and attack techniques more accurately, significantly improving overall security monitoring and incident response.<br/>
+
  
 
 
