@@ -46,12 +46,15 @@ Import the OVA file in Virtual Box. <br/>
   
 <b>Step 2:</b><br/>
 Since we're using VirtualBox, we need to set the VMSVGA graphic controller. Setting another graphic controller freezes the VM window.<br/>
-<br/>
   - Select the imported VM<br/>
   - Click <b>Settings</b> > <b>Display</b><br/>
   - In <b>Graphic Controller,</b> select the `VMSVGA` option
 
   <!-- IMAGE HERE -->
+  <p align="center">
+<img alt="image" src="https://github.com/user-attachments/assets/7745c88c-4e28-4016-9229-4fba88a51ff7" height="80%" width="80%"/>
+<br />
+<br />
 
   <b>Step 3:</b><br/>
 Start the VM then access it using the VM and password.It is easiest to access via SSH using Putty so that copy/paste functions properly.
