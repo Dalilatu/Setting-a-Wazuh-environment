@@ -193,3 +193,33 @@ Save and Exit
 <b>Step 3:</b> Restart the SSH service: service sshd restart.<br/>
 <br/>
 `sudo service sshd restart`
+
+# TESTING
+
+## Creating Malware Rules on Wazuh
+
+We are going to test it by writing some rules for detecting suspicious events related to the mimikatz.exe process. Mimikatz is a well-known tool for extracting Windows credentials.<br/>
+<br/>
+<b>Step 1:</b> Write a Security rule by editing the Wazuh rule file.<br/>
+Add Security rules using the following command:<br/>
+<br/>
+`sudo nano /var/ossec/etc/rules/local_rules.xml`<br/>
+<br/>
+You can add rule using the following codes:<br/>
+<group name="windows, sysmon, sysmon_process-anomalies,">
+   <rule id="100000" level="12">
+     <if_group>sysmon_event1</if_group>
+     <field name="win.eventdata.image">mimikatz.exe</field>
+     <description>Sysmon - Suspicious Process - mimikatz.exe</description>
+   </rule>
+   <rule id="100001" level="12">
+     <if_group>sysmon_event8</if_group>
+     <field name="win.eventdata.sourceImage">mimikatz.exe</field>
+     <description>Sysmon - Suspicious Process mimikatz.exe created a remote thread</description>
+   </rule>
+   <rule id="100002" level="12">
+     <if_group>sysmon_event_10</if_group>
+     <field name="win.eventdata.sourceImage">mimikatz.exe</field>
+     <description>Sysmon - Suspicious Process mimikatz.exe accessed $(win.eventdata.targetImage)</description>
+   </rule>
+</group>
