@@ -190,5 +190,6 @@ Save and Exit
 <br />
 <br />
 
-Restart the SSH service: service sshd restart.<br/>
+<b>Step 3:</b> Restart the SSH service: service sshd restart.<br/>
+<br/>
 `sudo service sshd restart`
