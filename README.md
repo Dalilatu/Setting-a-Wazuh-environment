@@ -152,9 +152,9 @@ To achieve this, let's follow the following steps.<br/>
 <br/>
 <br/>
 
-` <localfile>
-      <location>Microsoft-Windows-Sysmon/Operational</location>
-      <log_format>eventchannel</log_format>
+` <localfile> <br/>
+      <location>Microsoft-Windows-Sysmon/Operational</location> <br/>
+      <log_format>eventchannel</log_format><br/>
   </localfile>
   `<br/>
   <br/>
