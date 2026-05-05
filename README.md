@@ -208,7 +208,9 @@ Add Security rules using the following command:<br/>
 You can add rule using the following codes:<br/>
 <p align="center">
   <img alt="image" src="https://github.com/user-attachments/assets/ceef69d2-4bb7-47ad-8664-dc66320124c5" height="80%" width="80%"/><br/>
-Save and Exit
+In this case, we want to create a rule that detects mimikatz.exe process on the Agent's system. We have already install and executed the process just for demonstration.
 </p>
 <br />
 <br />
+
+
