@@ -161,6 +161,7 @@ To achieve this, let's follow the following steps.<br/>
    <p align="center">
 <img alt="image" src="https://github.com/user-attachments/assets/b9b87f1a-4f97-43ee-b168-0417403e9f7d" height="80%" width="80%"/><br/>
     <b>NB:</b> It should be under "Log Analysis"
+   </p>
 <br />
 <br />
 <b>Step 2:</b> Restart the Wazuh service:<br/>
