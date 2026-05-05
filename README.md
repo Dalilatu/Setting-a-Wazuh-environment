@@ -84,7 +84,9 @@ user: admin
 password: admin
 <br/>
 <br/>
-<b>NB:</b> It is to be noted that the .ova file is a Wazuh server and hence, only uses the CLI interface. Inorder to access the <strong>Web Interface</strong>, you need to use a windows system that is connected to the Wazuh server. Incase you choose to use your host machine to access the web interface like i did, you need to set the network of the server to <b>Bridged Adapter</b> so that it can communicate with your host.<br/>
+<b>NB:</b> It is to be noted that the .ova file is a Wazuh server and hence, only uses the CLI interface. Inorder to access the <strong>Web Interface</strong>, you need to use a windows system that is connected to the Wazuh server. 
+<br/>
+Incase you choose to use your host machine to access the web interface like i did, you need to set the network of the server to <b>Bridged Adapter</b> so that it can communicate with your host.<br/>
 <br/>
 <br/>
 
@@ -98,7 +100,7 @@ password: admin
 <br />
 <br />
 
-<b>NB:</b> You need to give you server a Static Ip Address and it default gateway to ensure it IP address doesn't change in case it listens to DHCP.<br/>
+<b>NB:</b> You need to give your server a Static Ip Address and it default gateway to ensure it IP address doesn't change in case it uses DHCP.<br/>
 
 This can be done using the following commands.<br/>
 Static ip addres: `sudo ifconfig eth0 192.168.1.x netmask 255.255.255.0`<br/>
@@ -110,7 +112,7 @@ default gateway: `sudo route add default gw 192.168.1.1 eth0`<br/>
 Creating agents in Wazuh is essential because they collect and send security data from endpoints to the central server, enabling real-time monitoring, threat detection, file integrity checks, and incident response; without agents, Wazuh has little visibility into systems and cannot effectively protect or monitor them.<br/>
 Below are the steps to follow:<br/>
 <br/>
-<b>Step 1:</b> Click on create agents and choose windows system of the agent. <br/>
+<b>Step 1:</b> Click on create agents and select the windows system of the agent. <br/>
 
 <b>Step 2:</b> Copy the powershell command and run it on the windows system you wish to install the agent.<br/>
 
@@ -130,7 +132,7 @@ Below are the steps to follow:<br/>
 <br />
 <br />
 
- <b>NB:</b>On the Wazuh dashboard, you should now see the agent.<br/>
+ <b>NB:</b> On the Wazuh dashboard, you should now see the agent's informations.<br/>
 
  <p align="center">
 <img alt="image" src="https://github.com/user-attachments/assets/d73c21f1-efa6-4b99-8152-1d7885be4cb9" height="80%" width="80%"/>
@@ -140,7 +142,7 @@ Below are the steps to follow:<br/>
 
 ## Configure Wazuh to Monitor Sysmon Logs
 
-Configuring Wazuh to monitor Sysmon logs is necessary because Sysmon provides deep, detailed visibility into system activity—such as process creation, network connections, and file changes that standard Windows logs often miss; by ingesting these logs, Wazuh can detect advanced threats, suspicious behavior, and attack techniques more accurately, significantly improving overall security monitoring and incident response.<br/>
+Configuring Wazuh to monitor Sysmon logs is necessary because Sysmon provides deep, detailed visibility into system activities such as process creation, network connections, and file changes that standard Windows logs often miss; by ingesting these logs, Wazuh can detect advanced threats, suspicious behavior, and attack techniques more accurately, significantly improving overall security monitoring and incident response.<br/>
 
  
 
