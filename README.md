@@ -159,8 +159,11 @@ To achieve this, let's follow the following steps.<br/>
 <br />
 <b>Step 2:</b> Restart the Wazuh service:<br/>
 <br/>
-`NET STOP WazuhSvc
-NET START WazuhSvc`
+`NET STOP WazuhSvc`
+<br/>
+`NET START WazuhSvc`
+<br/>
+<br/>
 
 <p align="center">
 <img alt="image" src="https://github.com/user-attachments/assets/4a558e12-d5cb-4762-b9c6-14411502b601" height="80%" width="80%"/>
