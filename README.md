@@ -157,6 +157,7 @@ To achieve this, let's follow the following steps.<br/>
    </p>
 <br />
 <br />
+
 <b>Step 2:</b> Restart the Wazuh service:<br/>
 <br/>
 `NET STOP WazuhSvc`
@@ -168,4 +169,28 @@ To achieve this, let's follow the following steps.<br/>
 <p align="center">
 <img alt="image" src="https://github.com/user-attachments/assets/4a558e12-d5cb-4762-b9c6-14411502b601" height="80%" width="80%"/>
 <br />
+<br 
+
+## Configuring Wazuh Server for Sysmon Events 
+Enable the ability to ssh as root from our Windows VM:<br/>
+<br/>
+<b>Step 1:</b> Enable root SSH access:<br/>
+
+<p align="center">
+In the Wazuh VM, edit the SSH configuration file with the command `sudo nano /etc/ssh/sshd_config:  <br/>
+   IMAGE HERE height="80%" width="80%"/><br/>
+</p>
 <br />
+<br />
+
+<p align="center">
+Change `##PermitRootLogin no` to `PermitRootLogin yes`  <br/>
+   IMAGE HERE height="80%" width="80%"/><br/>
+</p>
+<br/>
+Save and Exit
+<br />
+<br />
+
+Restart the SSH service: service sshd restart.<br/>
+`sudo service sshd restart`
