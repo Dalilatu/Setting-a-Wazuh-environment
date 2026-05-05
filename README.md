@@ -206,20 +206,9 @@ Add Security rules using the following command:<br/>
 `sudo nano /var/ossec/etc/rules/local_rules.xml`<br/>
 <br/>
 You can add rule using the following codes:<br/>
-<group name="windows, sysmon, sysmon_process-anomalies,">
-   <rule id="100000" level="12">
-     <if_group>sysmon_event1</if_group>
-     <field name="win.eventdata.image">mimikatz.exe</field>
-     <description>Sysmon - Suspicious Process - mimikatz.exe</description>
-   </rule>
-   <rule id="100001" level="12">
-     <if_group>sysmon_event8</if_group>
-     <field name="win.eventdata.sourceImage">mimikatz.exe</field>
-     <description>Sysmon - Suspicious Process mimikatz.exe created a remote thread</description>
-   </rule>
-   <rule id="100002" level="12">
-     <if_group>sysmon_event_10</if_group>
-     <field name="win.eventdata.sourceImage">mimikatz.exe</field>
-     <description>Sysmon - Suspicious Process mimikatz.exe accessed $(win.eventdata.targetImage)</description>
-   </rule>
-</group>
+<p align="center">
+  <img alt="image" src="https://github.com/user-attachments/assets/ceef69d2-4bb7-47ad-8664-dc66320124c5" height="80%" width="80%"/><br/>
+Save and Exit
+</p>
+<br />
+<br />
