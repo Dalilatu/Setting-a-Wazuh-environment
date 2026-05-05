@@ -175,17 +175,13 @@ To achieve this, let's follow the following steps.<br/>
 Enable the ability to ssh as root from our Windows VM:<br/>
 <br/>
 <b>Step 1:</b> Enable root SSH access:<br/>
-
-<p align="center">
 In the Wazuh VM, edit the SSH configuration file with the command `sudo nano /etc/ssh/sshd_config:  <br/>
-   IMAGE HERE height="80%" width="80%"/><br/>
-</p>
 <br />
 <br />
 
 <p align="center">
 Change `##PermitRootLogin no` to `PermitRootLogin yes`  <br/>
-   IMAGE HERE height="80%" width="80%"/><br/>
+   <img alt="image" src="https://github.com/user-attachments/assets/3301a94e-be20-4010-a353-2d583e936344" height="80%" width="80%"/><br/>
 </p>
 <br/>
 Save and Exit
