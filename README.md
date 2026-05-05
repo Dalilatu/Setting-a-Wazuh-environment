@@ -143,8 +143,32 @@ Below are the steps to follow:<br/>
 ## Configure Wazuh to Monitor Sysmon Logs
 
 Configuring Wazuh to monitor Sysmon logs is necessary because Sysmon provides deep, detailed visibility into system activities such as process creation, network connections, and file changes that standard Windows logs often miss; by ingesting these logs, Wazuh can detect advanced threats, suspicious behavior, and attack techniques more accurately, significantly improving overall security monitoring and incident response.<br/>
+<br/>
+To achieve this, let's follow the following steps.<br/>
+<br/>
+<b>Step 1:</b><br/>
+**On the Windows VM**: Use a text editor (notepad++ or notepad) as an Administrator and edit the `C:\\Program Files (x86)\\ossec-agent\\ossec.conf` file and add the following entries: <br/>
 
- 
+<br/>
+<br/>
 
+` <localfile>
+      <location>Microsoft-Windows-Sysmon/Operational</location>
+      <log_format>eventchannel</log_format>
+  </localfile>
+  `<br/>
+  <br/>
+   <p align="center">
+<img alt="image" src="https://github.com/user-attachments/assets/b9b87f1a-4f97-43ee-b168-0417403e9f7d" height="80%" width="80%"/><br/>
+    <b>NB:</b> It should be under "Log Analysis"
+<br />
+<br />
+<b>Step 2:</b> Restart the Wazuh service:<br/>
+<br/>
+`NET STOP WazuhSvc` <br/>
+`NET START WazuhSvc`
 
-
+<p align="center">
+<img alt="image" src="https://github.com/user-attachments/assets/4a558e12-d5cb-4762-b9c6-14411502b601" height="80%" width="80%"/>
+<br />
+<br />
