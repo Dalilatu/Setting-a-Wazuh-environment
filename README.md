@@ -293,8 +293,33 @@ On the Windows VM, use a text editor (notepad++ or notepad) and edit the `C:\\Pr
 <br />
 
 ## TESTING
-Let's download the EICAR file to test if the configuration work. 
+Let's download the EICAR file to test if the configuration work. <br/>
+<b>NB:</B> EICAR is not a real malware, but was designed to test the response of computer antivirus programs. Instead of using real malware, which could cause real damage, this test file allows people to test anti-virus software without having to use a real computer virus.
+<br/>
+<br/>
+Once i downloaded EICAR using powershell, i checked Wazuh dashboard to see if it was scanned.
+<br/>
 
+<p align="center">
+Wazuh dashboard showing positive scan for <b>eicar</b>:<br/>
+ <img alt="image" src="https://github.com/user-attachments/assets/a526d337-eaf7-4aea-a13b-389d1d01d340" height="80%" width="80%"/><br/>
+</p>
+<br />
+<br />
+
+<p align="center">
+Further analysis of alert:<br/>
+ <img alt="image" src="https://github.com/user-attachments/assets/7df5e3a8-2dda-423c-8d84-06f77fe12161" height="80%" width="80%"/><br/>
+</p>
+<br />
+<br />
+
+<p align="center">
+VirusTotal scan showing thesame number of red flags found on Wazuh:<br/>
+ <img alt="image" src="https://github.com/user-attachments/assets/dfa18fc0-bbd8-403d-b752-745439d533d1" height="80%" width="80%"/><br/>
+</p>
+<br />
+<br />
 
 
 
