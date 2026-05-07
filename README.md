@@ -238,6 +238,65 @@ Different security alerts:<br/>
 <br />
 <br />
 
+## Integrating VirusTotal with Wazuh Manager
+This integration will automatically send the file hash of any new file downloaded, placed, or created to a specified folder, in our case the Downloads folder, to VirusTotal. The only reason we are limiting it to the Downloads folder is to ensure we do not exceed the daily allowance for lookups. 
+<br/><br/>
+
+<b>Step 1:</b> Log into VirusTotal and get it API KEY<br/>
+
+<p align="center">
+Getting VirusTotal API key:<br/>
+  <img alt="image" src="https://github.com/user-attachments/assets/c54ee3d4-233d-4080-b927-79dd3bd59b9a" height="80%" width="80%"/><br/>
+</p>
+<br />
+<br />
+
+Paste the VirusTotal integration configuration into the  `/var/ossec/etc/ossec.conf` file. Be sure to place your own VirusTotal API key in the `<YOUR_VIRUS_TOTAL_API_KEY>` placeholder.<br/>
+Use the following: <br/> <br/>
+
+Wazuh Server CLI : `sudo nano /var/ossec/etc/ossec.conf`<br/><br/>
+
+<p align="center">
+Paste or type the following code in the "ossec.conf" file:<br/>
+  <img alt="image" src="https://github.com/user-attachments/assets/1036a4e7-722f-4834-a230-3c5f9c19b9b1" height="80%" width="80%"/><br/>
+</p>
+<br />
+<br />
+
+<p align="center">
+Be sure to add your own VirusTotal API key. :<br/>
+ <img alt="image" src="https://github.com/user-attachments/assets/162a1e26-e5d0-4e94-a5f6-82daf6eb3099" height="80%" width="80%"/><br/>
+</p>
+<br />
+<br />
+
+Restart wazuh-manager: `sudo systemctl restart wazuh-manager` <br/>
+<br/>
+
+
+<b>Step 2:</b> Configure Wazuh Agent <br/>
+
+On the Windows VM, use a text editor (notepad++ or notepad) and edit the `C:\\Program Files (x86)\\ossec-agent\\ossec.conf` file and add the following entries to track file changes in the Downloads folder.<br/>
+
+<p align="center">
+ Add this on the .conf file:<br/>
+ <img alt="image" src="https://github.com/user-attachments/assets/50d7ad33-950f-400e-bef0-e92c039d28ed" height="80%" width="80%"/><br/>
+</p>
+<br />
+<br />
+
+<p align="center">
+ Add this on the .conf file:<br/>
+ <img alt="image" src="https://github.com/user-attachments/assets/a4d9e063-e386-42f1-81aa-a8db7ec5a3c4" height="80%" width="80%"/><br/>
+</p>
+<br />
+<br />
+
+
+
+
+
+
 ## Conclusion
 This project provided hands-on experience in deploying and configuring a functional Wazuh environment for security monitoring and threat detection. Through this setup, I gained practical knowledge in log collection, SIEM integration, rule configuration, and basic incident detection within a controlled lab environment. The project strengthened my understanding of SOC operations and demonstrated the importance of centralized monitoring in improving system visibility and security analysis.
 
