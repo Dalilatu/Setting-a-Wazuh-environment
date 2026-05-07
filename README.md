@@ -295,8 +295,17 @@ On the Windows VM, use a text editor (notepad++ or notepad) and edit the `C:\\Pr
 ## TESTING
 Let's download the EICAR file to test if the configuration work. <br/>
 <b>NB:</B> EICAR is not a real malware, but was designed to test the response of computer antivirus programs. Instead of using real malware, which could cause real damage, this test file allows people to test anti-virus software without having to use a real computer virus.
+
+<!-- HOW TO DOWNLOAD EICAR,
+
+    Invoke-WebRequest -Uri https://secure.eicar.org/eicar.com -OutFile C:/Users/m122/Downloads/eicar.com 
+    
+    -->
+
+    
 <br/>
 <br/>
+
 Once i downloaded EICAR using powershell, i checked Wazuh dashboard to see if it was scanned.
 <br/>
 
