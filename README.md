@@ -194,7 +194,7 @@ Save and Exit
 <br/>
 `sudo service sshd restart`
 
-# TESTING
+## TESTING
 
 ## Creating Malware Rules on Wazuh
 
@@ -291,6 +291,9 @@ On the Windows VM, use a text editor (notepad++ or notepad) and edit the `C:\\Pr
 </p>
 <br />
 <br />
+
+## TESTING
+Let's download the EICAR file to test if the configuration work. 
 
 
 
