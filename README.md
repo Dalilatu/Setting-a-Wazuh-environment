@@ -212,5 +212,33 @@ In this case, we want to create a rule that detects mimikatz.exe process on the 
 </p>
 <br />
 <br />
+<b>NB:</b> You can go ahead and execute the mimikatz.exe file we downloaded at the beginning of the lab. It was executed using Powershell as admin.<br/>
+Executing `mimikatz.exe` will trigger and alert in the Wazuh dashboard as shown below.
+<br/>
+<br/>
+
+<p align="center">
+ Go to "Security Events":<br/>
+   <img alt="image" src="https://github.com/user-attachments/assets/9887cf39-a943-4dd2-8e89-d5e982b52ec0" height="80%" width="80%"/><br/>
+</p>
+<br />
+<br />
+
+<p align="center">
+You can see a dashboard showing different security events:<br/>
+   <img alt="image" src="https://github.com/user-attachments/assets/bd0c95ea-6b56-47df-91d7-ce09008dd061" height="80%" width="80%"/><br/>
+</p>
+<br />
+<br />
+
+<p align="center">
+Different security alerts:<br/>
+   <img alt="image" src="https://github.com/user-attachments/assets/0b10ee78-b36e-452f-9713-0bdfd4c4080e" height="80%" width="80%"/><br/>
+</p>
+<br />
+<br />
+
+## Conclusion
+This project provided hands-on experience in deploying and configuring a functional Wazuh environment for security monitoring and threat detection. Through this setup, I gained practical knowledge in log collection, SIEM integration, rule configuration, and basic incident detection within a controlled lab environment. The project strengthened my understanding of SOC operations and demonstrated the importance of centralized monitoring in improving system visibility and security analysis.
 
 
